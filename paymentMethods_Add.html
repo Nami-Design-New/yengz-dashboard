@@ -25,8 +25,9 @@
     <!-- App Css-->
     <link href="assets/css/app-rtl.min.css" id="appCss" rel="stylesheet" />
     <!-- custom Css-->
+    <link rel="stylesheet" href="assets/css/filepond.min.css">
+    <!-- custom Css-->
     <link rel="stylesheet" href="assets/css/custom.css">
-
 </head>
 <body>
     <!-- Begin page -->
@@ -488,101 +489,30 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0">Cities</h4>
+                        <h4 class="mb-sm-0"> اضافة وسيلة دفع </h4>
                         <div class="page-title-right d-flex align-items-center gap-3 flex-wrap">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="index.html"> لوحة التحكم </a></li>
-                                <li class="breadcrumb-item active">Cities</li>
+                                <li class="breadcrumb-item"><a href="paymentMethods.html"> وسائل الدفع </a></li>
+                                <li class="breadcrumb-item active"> اضافة وسيلة دفع </li>
                             </ol>
-                            <a href="cities_Add.html" class="btn btn-success">
-                                <i class="ri-add-circle-line align-middle me-1"></i> Add New city
-                            </a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <table id="cityTable"
-                                class="table table-bordered dt-responsive nowrap table-striped align-middle"
-                                style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th scope="col" style="width: 10px;">
-                                            <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" id="checkAll"
-                                                    value="option">
-                                            </div>
-                                        </th>
-                                        <th>Arabic Name</th>
-                                        <th>English Name</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll"
-                                                    value="option1">
-                                            </div>
-                                        </td>
-                                        <td>القاهرة</td>
-                                        <td>Cairo</td>
-                                        <td>
-                                            <!-- <button class="btnn bttn-success">
-                                                <i class="ri-eye-fill fs-16"></i>
-                                            </button> -->
-                                            <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button>
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll"
-                                                    value="option2">
-                                            </div>
-                                        </td>
-                                        <td>الإسكندرية</td>
-                                        <td>Alexandria</td>
-                                        <td>
-                                            <!-- <button class="btnn bttn-success">
-                                                <i class="ri-eye-fill fs-16"></i>
-                                            </button> -->
-                                            <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button>
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll"
-                                                    value="option3">
-                                            </div>
-                                        </td>
-                                        <td>الجيزة</td>
-                                        <td>Giza</td>
-                                        <td>
-                                            <!-- <button class="btnn bttn-success">
-                                                <i class="ri-eye-fill fs-16"></i>
-                                            </button> -->
-                                            <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button>
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <form action="" class="h-100 m-0 row">
+                                <div class=" col-12 p-2">
+                                    <div>
+                                        <label for="image" class="form-label">صورة وسيلة الدفع </label>
+                                        <input type="file" name="" id="" class="filepond-multiple ">
+                                    </div>
+                                </div>
+                                <div class="col-12 p-2 d-flex justify-content-end mt-auto">
+                                    <button class="btn btn-success fs-7 fw-medium" type="submit">
+                                        حفظ
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -592,15 +522,15 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © <a href="#!"
-                                target="_blank"> ينجز </a>
+                            <script>document.write(new Date().getFullYear())</script> © <a
+                                href="https://Yengzsolutions.com" target="_blank"> ينجز </a>
                         </div>
-                        <!-- <div class="col-sm-6">
+                        <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
-                                 by <a href="#!" target="_blank">Yengz
-                                </a>
+                                 by <a href="https://Yengzsolutions.com" target="_blank">Yengz
+                                    Solutions</a>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </footer>
@@ -628,6 +558,7 @@
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
     <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
     <!-- apexcharts -->
     <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
     <!-- App js -->
@@ -652,6 +583,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
     <script src="assets/js/pages/datatables.init.js"></script>
-
+    <!-- file pond -->
+    <script src="assets/js/filepond.min.js"></script>
+    <script>
+        $(".filepond-multiple").filepond();
+    </script>
 </body>
 </html>

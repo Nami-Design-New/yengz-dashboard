@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en" data-appColor="default" data-layout="vertical" data-topbar="light" data-sidebar="light"
     data-sidebar-size="lg" data-sidebar-image="none" data-preloader="enable" dir="ltr">
+
 <head>
     <meta charset="utf-8" />
     <title></title>
@@ -28,6 +29,7 @@
     <link rel="stylesheet" href="assets/css/custom.css">
 
 </head>
+
 <body>
     <!-- Begin page -->
     <div id="layout-wrapper">
@@ -282,7 +284,7 @@
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- عنصر -->
-                                <h6 class="dropdown-header">مرحباً  حمزة!</h6>
+                                <h6 class="dropdown-header">مرحباً حمزة!</h6>
                                 <!-- <a class="dropdown-item" href="#!">
                                     <i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i>
                                     <span class="align-middle">الملف الشخصي</span>
@@ -488,11 +490,11 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0">Users</h4>
+                        <h4 class="mb-sm-0">المستخدمون</h4>
                         <div class="page-title-right d-flex align-items-center gap-3 flex-wrap">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="index.html"> لوحة التحكم </a></li>
-                                <li class="breadcrumb-item active">Users</li>
+                                <li class="breadcrumb-item active">المستخدمون</li>
                             </ol>
                         </div>
                     </div>
@@ -505,128 +507,234 @@
                                     <tr>
                                         <th scope="col" style="width: 10px;">
                                             <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" id="checkAll" value="option">
+                                                <input class="form-check-input fs-15" type="checkbox" id="checkAll"
+                                                    value="option">
                                             </div>
                                         </th>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Image</th>
-                                        <th>Phone Number</th>
-                                        <th>Date of Birth</th>
-                                        <th>Team Name</th>
-                                        <th>International Team Name</th>
-                                        <th>Gender</th>
-                                        <th>Wallet</th>
-                                        <th>Points</th>
-                                        <th>Blocked/Unblocked</th>
-                                        <th>Orders</th>
-                                        <th>Actions</th>
+                                        <th>الاسم </th>
+                                        <th> البريد</th>
+                                        <th>رقم الهاتف</th>
+                                        <th>صورة</th>
+                                        <th>العمر</th>
+                                        <th>النوع</th>
+                                        <th>نبذة عنه</th>
+                                        <th>هل تم التحقق من الهاتف</th>
+                                        <th>الرصيد</th>
+                                        <th>رصيد مجمد</th>
+                                        <th>رصيد قابل للسحب</th>
+                                        <th>هل هو موثق</th>
+                                        <th>الملفات المرفوعة</th>
+                                        <th>التقييم</th>
+                                        <th>الإجراءات</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row">
                                             <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
+                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll"
+                                                    value="option1">
                                             </div>
                                         </th>
-                                        <td>Hamza Mahmoud</td>
+                                        <td>حمزة محمود</td>
                                         <td>hamza@example.com</td>
-                                        <td><img src="assets/images/users/avatar-1.jpg" style="width: 50px; height: 50px; object-fit: cover; border-radius: 12px;"></td>
                                         <td>123456789</td>
-                                        <td>1985-03-15</td>
-                                        <td>Development Team</td>
-                                        <td>International Developers</td>
-                                        <td>Male</td>
+                                        <td><img src="assets/images/users/avatar-1.jpg"
+                                                style="width: 50px; height: 50px; object-fit: cover; border-radius: 12px;">
+                                        </td>
+                                        <td>39</td>
+                                        <td>ذكر</td>
+                                        <td>نبذة عن حمزة محمود</td>
+                                        <td>نعم</td>
                                         <td>$500</td>
-                                        <td>200</td>
-                                        <td><button class="btn btn-outline-dark">Block</button></td>
-                                        <td><button class="btn btn-info">Show Orders</button></td>
-                                          <td>
-                                            <!-- <button class="btnn bttn-success">
-                                                <i class="ri-eye-fill fs-16"></i>
-                                            </button> -->
-                                            <!-- <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button> -->
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
+                                        <td>$100</td>
+                                        <td>$400</td>
+                                        <td>نعم</td>
+                                        <td>
+                                            <button class="btn btn-outline-dark" data-bs-toggle="modal"
+                                                data-bs-target="#filesModal">عرض الملفات</button>
+                                        </td>
+                                        <td>4.5</td>
+                                        <td>
+                                            <button class="btn btn-info" data-bs-toggle="modal"
+                                                data-bs-target="#certificatesModal">شهاداته</button>
+                                            <button class="btn btn-info" data-bs-toggle="modal"
+                                                data-bs-target="#projectsModal">اعماله</button>
+                                            <button class="btn btn-info" data-bs-toggle="modal"
+                                                data-bs-target="#servicesModal">خدماته</button>
+                                            <button class="btn btn-info" data-bs-toggle="modal"
+                                                data-bs-target="#aboutModal">نبذة عنه</button>
+                                            <button class="btn btn-danger">حظر/إلغاء الحظر</button>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
                                             <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
+                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll"
+                                                    value="option1">
                                             </div>
                                         </th>
-                                        <td>Alice Smith</td>
-                                        <td>alice@example.com</td>
-                                        <td><img src="assets/images/users/avatar-2.jpg" style="width: 50px; height: 50px; object-fit: cover; border-radius: 12px;"></td>
-                                        <td>987654321</td>
-                                        <td>1990-05-20</td>
-                                        <td>Design Team</td>
-                                        <td>Global Designers</td>
-                                        <td>Female</td>
-                                        <td>$700</td>
-                                        <td>300</td>
-                                        <td><button class="btn btn-dark">Unblock</button></td>
-                                        <td><button class="btn btn-info">Show Orders</button></td>
-                                          <td>
-                                            <!-- <button class="btnn bttn-success">
-                                                <i class="ri-eye-fill fs-16"></i>
-                                            </button> -->
-                                            <!-- <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button> -->
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
+                                        <td>حمزة محمود</td>
+                                        <td>hamza@example.com</td>
+                                        <td>123456789</td>
+                                        <td><img src="assets/images/users/avatar-1.jpg"
+                                                style="width: 50px; height: 50px; object-fit: cover; border-radius: 12px;">
+                                        </td>
+                                        <td>39</td>
+                                        <td>ذكر</td>
+                                        <td>نبذة عن حمزة محمود</td>
+                                        <td>نعم</td>
+                                        <td>$500</td>
+                                        <td>$100</td>
+                                        <td>$400</td>
+                                        <td>نعم</td>
+                                        <td>
+                                            <button class="btn btn-outline-dark" data-bs-toggle="modal"
+                                                data-bs-target="#filesModal">عرض الملفات</button>
+                                        </td>
+                                        <td>4.5</td>
+                                        <td>
+                                            <button class="btn btn-info" data-bs-toggle="modal"
+                                                data-bs-target="#certificatesModal">شهاداته</button>
+                                            <button class="btn btn-info" data-bs-toggle="modal"
+                                                data-bs-target="#projectsModal">اعماله</button>
+                                            <button class="btn btn-info" data-bs-toggle="modal"
+                                                data-bs-target="#servicesModal">خدماته</button>
+                                            <button class="btn btn-info" data-bs-toggle="modal"
+                                                data-bs-target="#aboutModal">نبذة عنه</button>
+                                            <button class="btn btn-danger">حظر/إلغاء الحظر</button>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
-                                            </div>
-                                        </th>
-                                        <td>Michael Johnson</td>
-                                        <td>michael@example.com</td>
-                                        <td><img src="assets/images/users/avatar-3.jpg" style="width: 50px; height: 50px; object-fit: cover; border-radius: 12px;"></td>
-                                        <td>555666777</td>
-                                        <td>1988-10-10</td>
-                                        <td>Marketing Team</td>
-                                        <td>Global Marketers</td>
-                                        <td>Male</td>
-                                        <td>$1000</td>
-                                        <td>400</td>
-                                        <td><button class="btn btn-outline-dark">Block</button></td>
-                                        <td><button class="btn btn-info">Show Orders</button></td>
-                                          <td>
-                                            <!-- <button class="btnn bttn-success">
-                                                <i class="ri-eye-fill fs-16"></i>
-                                            </button> -->
-                                            <!-- <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button> -->
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
+
                                 </tbody>
                             </table>
+
+                            <!-- Certificates Modal -->
+                            <div class="modal fade" id="certificatesModal" tabindex="-1" role="dialog"
+                                aria-labelledby="certificatesModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="certificatesModalLabel">شهادات المستخدم</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                            
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="certificate1.jpg" alt="Certificate 1">
+                                            <img src="certificate2.jpg" alt="Certificate 2">
+                                            <!-- Add more certificate images here -->
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark"
+                                                data-bs-dismiss="modal">إغلاق</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Projects Modal -->
+                            <div class="modal fade" id="projectsModal" tabindex="-1" role="dialog"
+                                aria-labelledby="projectsModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="projectsModalLabel">مشاريع المستخدم</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>عنوان المشروع</th>
+                                                        <th>وصف المشروع</th>
+                                                        <th>رابط المشروع</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>مشروع 1</td>
+                                                        <td>وصف مشروع 1</td>
+                                                        <td><a href="#">رابط مشروع 1</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>مشروع 2</td>
+                                                        <td>وصف مشروع 2</td>
+                                                        <td><a href="#">رابط مشروع 2</a></td>
+                                                    </tr>
+                                                    <!-- Add more project rows here -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark"
+                                                data-bs-dismiss="modal">إغلاق</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Services Modal -->
+                            <div class="modal fade" id="servicesModal" tabindex="-1" role="dialog"
+                                aria-labelledby="servicesModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="servicesModalLabel">خدمات المستخدم</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>خدمة 1</li>
+                                                <li>خدمة 2</li>
+                                                <!-- Add more service items here -->
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark"
+                                                data-bs-dismiss="modal">إغلاق</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- About Modal -->
+                            <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog"
+                                aria-labelledby="aboutModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="aboutModalLabel">نبذة عن المستخدم</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>نبذة مختصرة عن المستخدم وسيرته الذاتية.</p>
+                                            <p>هذا المستخدم يعمل في مجال الـ... ولديه خبرة في ...</p>
+                                            <!-- Add more information about the user here -->
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark"
+                                                data-bs-dismiss="modal">إغلاق</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+
             </div>
             <!-- End Page-content -->
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © <a href="#!"
-                                target="_blank"> ينجز </a>
+                            <script>document.write(new Date().getFullYear())</script> © <a href="#!" target="_blank">
+                                ينجز </a>
                         </div>
                         <!-- <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
@@ -687,4 +795,5 @@
     <script src="assets/js/pages/datatables.init.js"></script>
 
 </body>
+
 </html>

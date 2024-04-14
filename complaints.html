@@ -176,7 +176,7 @@
                         <button id="toggleDirectionBtn" class="btn text-dark  btn-ghost-secondary"> عربي </button>
                         <div class="ms-1 header-item d-none d-sm-flex">
                             <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
-                                data-toggle="fullscreen">
+                                data-bs-toggle="fullscreen">
                                 <i class='bx bx-fullscreen fs-22'></i>
                             </button>
                         </div>
@@ -284,7 +284,7 @@
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- عنصر -->
-                                <h6 class="dropdown-header">مرحباً  حمزة!</h6>
+                                <h6 class="dropdown-header">مرحباً حمزة!</h6>
                                 <!-- <a class="dropdown-item" href="#!">
                                     <i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i>
                                     <span class="align-middle">الملف الشخصي</span>
@@ -490,11 +490,11 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0">Complaints</h4>
+                        <h4 class="mb-sm-0">الشكاوى</h4>
                         <div class="page-title-right d-flex align-items-center gap-3 flex-wrap">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="index.html"> لوحة التحكم </a></li>
-                                <li class="breadcrumb-item active">Complaints</li>
+                                <li class="breadcrumb-item active">الشكاوى</li>
                             </ol>
                         </div>
                     </div>
@@ -505,21 +505,26 @@
                                 style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Reason</th>
-                                        <th scope="col">Comment</th>
-                                        <th scope="col">User Data</th>
+                                        <th scope="col">العنوان</th>
+                                        <th scope="col">الرسالة</th>
+                                        <th scope="col">النوع (شكوى أو اقتراح)</th>
+                                        <th scope="col">الصور المرفوعة</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Item was damaged upon arrival</td>
-                                        <td>Item arrived broken, please assist</td>
-                                        <td>John Doe (Email: john@example.com)</td>
+                                        <td>تم تلف العنصر عند الوصول</td>
+                                        <td>وصل العنصر مكسورًا، يرجى المساعدة</td>
+                                        <td>شكوى</td>
+                                        <td><button class="btn btn-info" data-bs-toggle="modal"
+                                                data-bs-target="#uploadedImagesModal">عرض الصور</button></td>
                                     </tr>
                                     <tr>
-                                        <td>Received wrong item</td>
-                                        <td>Received the wrong item, I ordered a different product</td>
-                                        <td>Alice Smith (Email: alice@example.com)</td>
+                                        <td>تم استلام عنصر خاطئ</td>
+                                        <td>استلمت العنصر الخاطئ، طلبت منتجًا مختلفًا</td>
+                                        <td>شكوى</td>
+                                        <td><button class="btn btn-info" data-bs-toggle="modal"
+                                                data-bs-target="#uploadedImagesModal">عرض الصور</button></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -532,19 +537,38 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © <a href="#!"
-                                target="_blank"> ينجز </a>
+                            <script>document.write(new Date().getFullYear())</script> © <a href="#!" target="_blank">
+                                ينجز </a>
                         </div>
-                        <!-- <div class="col-sm-6">
-                            <div class="text-sm-end d-none d-sm-block">
-                                 by <a href="#!" target="_blank">Yengz
-                                </a>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </footer>
         </div>
+
+        <!-- Uploaded Images Modal -->
+        <div class="modal fade" id="uploadedImagesModal" tabindex="-1" role="dialog"
+            aria-labelledby="uploadedImagesModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="uploadedImagesModalLabel">الصور المرفوعة</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Placeholder for uploaded images -->
+                        <img src="uploaded_image1.jpg" alt="Uploaded Image 1" class="img-fluid">
+                        <img src="uploaded_image2.jpg" alt="Uploaded Image 2" class="img-fluid">
+                        <!-- Add more images as needed -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">إغلاق</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <!-- end main content-->
     </div>
     <!--start back-to-top-->

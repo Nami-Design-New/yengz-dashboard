@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en" data-appColor="default" data-layout="vertical" data-topbar="light" data-sidebar="light"
     data-sidebar-size="lg" data-sidebar-image="none" data-preloader="enable" dir="ltr">
+
 <head>
     <meta charset="utf-8" />
     <title></title>
@@ -28,6 +29,7 @@
     <link rel="stylesheet" href="assets/css/custom.css">
 
 </head>
+
 <body>
     <!-- Begin page -->
     <div id="layout-wrapper">
@@ -282,7 +284,7 @@
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- عنصر -->
-                                <h6 class="dropdown-header">مرحباً  حمزة!</h6>
+                                <h6 class="dropdown-header">مرحباً حمزة!</h6>
                                 <!-- <a class="dropdown-item" href="#!">
                                     <i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i>
                                     <span class="align-middle">الملف الشخصي</span>
@@ -488,94 +490,73 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0">Add New Nutrient</h4>
+                        <h4 class="mb-sm-0">الأقسام الفرعية </h4>
                         <div class="page-title-right d-flex align-items-center gap-3 flex-wrap">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="index.html"> لوحة التحكم </a></li>
-                                <li class="breadcrumb-item active">Nutrients</li>
+                                <li class="breadcrumb-item"><a href="departments.html"> الأقسام </a></li>
+                                <li class="breadcrumb-item active"> الأقسام الفرعية</li>
                             </ol>
-                            <a href="nutrients_Add.html" class="btn btn-success">
-                                <i class="ri-add-circle-line align-middle me-1"></i> Add New Nutrient
-                            </a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <table id="itemTable"
+                            <table id="sectionTable"
                                 class="table table-bordered dt-responsive nowrap table-striped align-middle"
                                 style="width:100%">
                                 <thead>
                                     <tr>
                                         <th scope="col" style="width: 10px;">
                                             <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" id="checkAll" value="option">
+                                                <input class="form-check-input fs-15" type="checkbox" id="checkAll"
+                                                    value="option">
                                             </div>
                                         </th>
-                                        <th>Arabic Name</th>
-                                        <th>English Name</th>
-                                        <th>Actions</th>
+                                        <th>الصورة</th>
+                                        <th>الاسم بالعربية</th>
+                                        <th>الاسم بالإنجليزية</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>
                                             <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
+                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll"
+                                                    value="option1">
                                             </div>
                                         </td>
-                                        <td>تفاح</td>
-                                        <td>Apple</td>
-                                         <td>
-                                            <!-- <button class="btnn bttn-success">
-                                                <i class="ri-eye-fill fs-16"></i>
-                                            </button> -->
-                                            <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button>
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
+                                        <td><img src="assets/images/sidebar/img-4.jpg" alt="صورة القسم 1"
+                                                style="width: 50px; height: 50px; object-fit: cover; border-radius: 12px;">
                                         </td>
+                                        <td>اسم الفرعي القسم العربي 1</td>
+                                        <td>English Name 1</td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option2">
+                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll"
+                                                    value="option2">
                                             </div>
                                         </td>
-                                        <td>برتقال</td>
-                                        <td>Orange</td>
-                                         <td>
-                                            <!-- <button class="btnn bttn-success">
-                                                <i class="ri-eye-fill fs-16"></i>
-                                            </button> -->
-                                            <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button>
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
+                                        <td><img src="assets/images/sidebar/img-4.jpg" alt="صورة  الفرعي القسم 2"
+                                                style="width: 50px; height: 50px; object-fit: cover; border-radius: 12px;">
                                         </td>
+                                        <td>اسم الفرعي القسم العربي 2</td>
+                                        <td>English Name 2</td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option3">
+                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll"
+                                                    value="option3">
                                             </div>
                                         </td>
-                                        <td>موز</td>
-                                        <td>Banana</td>
-                                         <td>
-                                            <!-- <button class="btnn bttn-success">
-                                                <i class="ri-eye-fill fs-16"></i>
-                                            </button> -->
-                                            <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button>
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
+                                        <td>
+                                            <img src="assets/images/sidebar/img-4.jpg" alt="صورة  الفرعي القسم 3"
+                                                style="width: 50px; height: 50px; object-fit: cover; border-radius: 12px;">
                                         </td>
+                                        <td>اسم الفرعي القسم العربي 3</td>
+                                        <td>English Name 3</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -588,19 +569,14 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © <a href="#!"
-                                target="_blank"> ينجز </a>
+                            <script>document.write(new Date().getFullYear())</script> © <a href="#!" target="_blank">
+                                ينجز </a>
                         </div>
-                        <!-- <div class="col-sm-6">
-                            <div class="text-sm-end d-none d-sm-block">
-                                 by <a href="#!" target="_blank">Yengz
-                                </a>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </footer>
         </div>
+
         <!-- end main content-->
     </div>
     <!--start back-to-top-->
@@ -650,4 +626,5 @@
     <script src="assets/js/pages/datatables.init.js"></script>
 
 </body>
+
 </html>
