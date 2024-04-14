@@ -2,7 +2,7 @@
 * {
   font-family: "IBM Plex Sans Arabic", sans-serif;
 }
-:is(.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6) {
+:is(.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6) {
   font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 .menuFav {
@@ -373,4 +373,10 @@
 #map {
   height: 400px;
   border-radius: 16px;
+}
+
+:root {
+  --vz-primary-rgb: 65, 12, 158;
+  --vz-pagination-active-bg: #410c9e;
+  --vz-pagination-active-border-color: #410c9e;
 }

@@ -391,4 +391,10 @@
 #map {
   height: 400px;
   border-radius: 16px;
+}
+
+:root {
+  --vz-primary-rgb: 65, 12, 158;
+  --vz-pagination-active-bg: #410c9e;
+  --vz-pagination-active-border-color: #410c9e;
 }/*# sourceMappingURL=custom.css.map */
