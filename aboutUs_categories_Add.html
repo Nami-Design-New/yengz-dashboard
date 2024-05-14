@@ -2,7 +2,6 @@
 <html lang="en" data-appColor="default" data-layout="vertical" data-topbar="light" data-sidebar="dark"
     data-sidebar-size="lg" data-sidebar-image="none" data-preloader="enable" dir="ltr">
 
-
 <head>
     <meta charset="utf-8" />
     <title></title>
@@ -30,7 +29,6 @@
     <link href="assets/css/app-rtl.min.css" id="appCss" rel="stylesheet" />
     <!-- custom Css-->
     <link rel="stylesheet" href="assets/css/custom.css">
-
 </head>
 
 <body>
@@ -287,7 +285,7 @@
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- عنصر -->
-                                <h6 class="dropdown-header">مرحباً  حمزة!</h6>
+                                <h6 class="dropdown-header">مرحباً حمزة!</h6>
                                 <!-- <a class="dropdown-item" href="#!">
                                     <i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i>
                                     <span class="align-middle">الملف الشخصي</span>
@@ -363,7 +361,7 @@
                     <i class="ri-record-circle-line"></i>
                 </button>
             </div>
-             <div id="scrollbar">
+            <div id="scrollbar">
                 <div class="container-fluid">
                     <div id="two-column-menu">
                     </div>
@@ -485,96 +483,45 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0">Add-ons</h4>
+                        <h4 class="mb-sm-0"> من نحن </h4>
                         <div class="page-title-right d-flex align-items-center gap-3 flex-wrap">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="index.html"> لوحة التحكم </a></li>
-                                <li class="breadcrumb-item active">Add-ons</li>
+                                <li class="breadcrumb-item"><a href="aboutUs.html"> من نحن </a></li>
+                                <li class="breadcrumb-item"><a href="aboutUs_categories.html"> الاقسام الرئيسية </a></li>
+                                <li class="breadcrumb-item active"> اضافة قسم رئيسي </li>
                             </ol>
-                            <a href="add-ons_Add.html" class="btn btn-success">
-                                <i class="ri-add-circle-line align-middle me-1"></i> Add New add-on
-                            </a>
                         </div>
                     </div>
-
                     <div class="card">
                         <div class="card-body">
-                            <table id="addonTable"
-                                class="table table-bordered dt-responsive nowrap table-striped align-middle"
-                                style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th scope="col" style="width: 10px;">
-                                            <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" id="checkAll" value="option">
-                                            </div>
-                                        </th>
-                                        <th>Arabic Name</th>
-                                        <th>English Name</th>
-                                        <th>Price</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
-                                            </div>
-                                        </td>
-                                        <td>جبن</td>
-                                        <td>Cheese</td>
-                                        <td>$1.50</td>
-                                       <td>
-                                            
-                                            <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button>
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option2">
-                                            </div>
-                                        </td>
-                                        <td>زيتون</td>
-                                        <td>Olives</td>
-                                        <td>$1.00</td>
-                                       <td>
-                                            
-                                            <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button>
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option3">
-                                            </div>
-                                        </td>
-                                        <td>فلفل</td>
-                                        <td>Peppers</td>
-                                        <td>$0.75</td>
-                                       <td>
-                                            
-                                            <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button>
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+
+
+                            <form action="" class="h-100 m-0 row">
+                                <div class="col-md-6 col-12 p-2">
+                                    <div>
+                                        <label for="arabic" class="form-label"> عربي </label>
+                                        <input type="text" class="form-control" id="arabic" placeholder="arabic">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 p-2">
+                                    <div>
+                                        <label for="English" class="form-label"> English </label>
+                                        <input type="text" class="form-control" id="English" placeholder="English">
+                                    </div>
+                                </div>
+                               
+                                
+                                <div class="col-12 p-2 d-flex justify-content-end mt-auto">
+                                    <button class="btn btn-success fs-7 fw-medium" type="submit">
+                                        حفظ
+                                    </button>
+                                </div>
+                            </form>
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -584,8 +531,8 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © <a href="#!"
-                                target="_blank"> ينجز </a>
+                            <script>document.write(new Date().getFullYear())</script> © <a href="#!" target="_blank">
+                                ينجز </a>
                         </div>
                         <!-- <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
@@ -645,10 +592,6 @@
     <script src="assets/js/pages/apexcharts-costom.js"></script>
     <!-- App js -->
     <script src="assets/js/app.js"></script>
-
-
-
-
 </body>
 
 </html>

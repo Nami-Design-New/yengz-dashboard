@@ -2,7 +2,6 @@
 <html lang="en" data-appColor="default" data-layout="vertical" data-topbar="light" data-sidebar="dark"
     data-sidebar-size="lg" data-sidebar-image="none" data-preloader="enable" dir="ltr">
 
-
 <head>
     <meta charset="utf-8" />
     <title></title>
@@ -30,7 +29,6 @@
     <link href="assets/css/app-rtl.min.css" id="appCss" rel="stylesheet" />
     <!-- custom Css-->
     <link rel="stylesheet" href="assets/css/custom.css">
-
 </head>
 
 <body>
@@ -287,7 +285,7 @@
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- عنصر -->
-                                <h6 class="dropdown-header">مرحباً  حمزة!</h6>
+                                <h6 class="dropdown-header">مرحباً حمزة!</h6>
                                 <!-- <a class="dropdown-item" href="#!">
                                     <i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i>
                                     <span class="align-middle">الملف الشخصي</span>
@@ -363,7 +361,7 @@
                     <i class="ri-record-circle-line"></i>
                 </button>
             </div>
-             <div id="scrollbar">
+            <div id="scrollbar">
                 <div class="container-fluid">
                     <div id="two-column-menu">
                     </div>
@@ -485,47 +483,38 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0">permissions</h4>
+                        <h4 class="mb-sm-0"> من نحن الاقسام الرئيسية </h4>
                         <div class="page-title-right d-flex align-items-center gap-3 flex-wrap">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="index.html"> لوحة التحكم </a></li>
-                                <li class="breadcrumb-item active">Permissions</li>
+                                <li class="breadcrumb-item"><a href="aboutUs.html"> من نحن </a></li>
+                                <li class="breadcrumb-item"><a href="aboutUs_categories.html"> الاقسام الرئيسية </a></li>
+                                <li class="breadcrumb-item active"> الاقسام الفرعية </li>
                             </ol>
-                            <a href="permission_Add.html" class="btn btn-success">
-                                <i class="ri-add-circle-line align-middle me-1"></i> Add New Permission
+                            <a href="aboutUs_subCategory_Add.html" class="btn btn-success">
+                                <i class="ri-add-circle-line align-middle me-1"></i> اضافة قسم فرعي
                             </a>
                         </div>
-                    </div>
 
+                      
+
+                    </div>
                     <div class="card">
                         <div class="card-body">
-                            <table 
-                                class="table table-bordered dt-responsive nowrap table-striped align-middle w-100">
+
+                            <table class="table table-bordered dt-responsive nowrap table-striped align-middle w-100">
                                 <thead>
                                     <tr>
-                                        <th scope="col" style="width: 10px;">
-                                            <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox"
-                                                    id="checkAll" value="option">
-                                            </div>
-                                        </th>
-                                        <th data-ordering="false">Name</th>
-                                        <th data-ordering="false">Registration Date</th>
-                                        <th data-ordering="false">Actions</th>
+                                        <th> عربي </th>
+                                        <th>English </th>
+                                        <th>الإجراءات</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row">
-                                            <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox"
-                                                    name="checkAll" value="option1">
-                                            </div>
-                                        </th>
-                                        <td>Super Admin</td>
-                                        <td>01/02/2024 03:33 AM</td>
+                                        <td>معلومات بالعربي</td>
+                                        <td>Information in English</td>
                                         <td>
-                                            
                                             <button class="btnn bttn-dark">
                                                 <i class="ri-pencil-fill fs-16"></i>
                                             </button>
@@ -535,16 +524,9 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">
-                                            <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox"
-                                                    name="checkAll" value="option1">
-                                            </div>
-                                        </th>
-                                        <td>Admin</td>
-                                        <td>01/02/2024 03:33 AM</td>
+                                        <td>معلومات بالعربي</td>
+                                        <td>Information in English</td>
                                         <td>
-                                            
                                             <button class="btnn bttn-dark">
                                                 <i class="ri-pencil-fill fs-16"></i>
                                             </button>
@@ -553,27 +535,14 @@
                                             </button>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <div class="form-check">
-                                                <input class="form-check-input fs-15" type="checkbox"
-                                                    name="checkAll" value="option1">
-                                            </div>
-                                        </th>
-                                        <td>HR</td>
-                                        <td>01/02/2024 03:33 AM</td>
-                                        <td>
-                                            
-                                            <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button>
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
+                                    <!-- Add more rows with real data as needed -->
                                 </tbody>
                             </table>
+
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -583,15 +552,15 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © <a href="#!"
-                                target="_blank"> ينجز </a>
+                            <script>document.write(new Date().getFullYear())</script> © <a href="#!" target="_blank">
+                                ينجز </a>
                         </div>
-                        <div class="col-sm-6">
+                        <!-- <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
                                  by <a href="#!" target="_blank">Yengz
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </footer>
@@ -614,7 +583,6 @@
     <!-- +++++++++++++++++++++++++++++++++++++ -->
     <!-- +++++++++++++++ JAVASCRIPT ++++++++++ -->
     <!-- +++++++++++++++++++++++++++++++++++++ -->
-
     <!-- +++++++++++++++++++++++++++++++++++++ -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
@@ -645,8 +613,6 @@
     <script src="assets/js/pages/apexcharts-costom.js"></script>
     <!-- App js -->
     <script src="assets/js/app.js"></script>
-
-
 </body>
 
 </html>
