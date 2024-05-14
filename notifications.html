@@ -449,7 +449,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="appSettings.html">
-                                <i class="ri-equalizer-line"></i> <span>إعدادات التطبيق</span>
+                                <i class="ri-equalizer-line"></i> <span>الاعدادات </span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -483,26 +483,46 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0"> شركاؤونا </h4>
+                        <h4 class="mb-sm-0"> الاشعارات </h4>
                         <div class="page-title-right d-flex align-items-center gap-3 flex-wrap">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="index.html"> لوحة التحكم </a></li>
-                                <li class="breadcrumb-item active"> شركاؤونا </li>
+                                <li class="breadcrumb-item active"> الاشعارات </li>
                             </ol>
-                            <a href="partners_Add.html" class="btn btn-success">
-                                <i class="ri-add-circle-line align-middle me-1"></i> اضافة شريك
-                            </a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body">
-                          
-                            
+                            <form action="" class="h-100 m-0 row">
+                                <div class="col-md-6  col-12 p-2">
+                                    <label for="Name" class="form-label"> العنوان </label>
+                                    <input type="text" class="form-control" id="Name" placeholder="العنوان">
+                                </div>
+                                <div class="col-md-6  col-12 p-2">
+                                    <label class="form-label"> ارسال الاشعارات الي </label>
+                                    <select class="js-example-basic-single" multiple name="state">
+                                        <option value="clints"> العملاء </option>
+                                        <option value="employees"> الموظفون </option>
+                                        <option value="all"> الكل </option>
 
 
 
+                                    </select>
+                                </div>
+                                <div class=" col-12 p-2">
+                                    <label for="description" class="form-label">الوصف</label>
+                                    <textarea class="form-control" id="description" rows="3"
+                                        placeholder="الوصف"></textarea>
+                                </div>
 
-                            
+
+                                <div class="col-12 p-2 d-flex justify-content-end mt-auto">
+                                    <button class="btn btn-success fs-7 fw-medium" type="submit">
+                                        حفظ 
+                                    </button>
+                                </div>
+                            </form>
+
                         </div>
                     </div>
                 </div>
@@ -515,7 +535,6 @@
                             <script>document.write(new Date().getFullYear())</script> © <a href="#!" target="_blank">
                                 ينجز </a>
                         </div>
-                        
                     </div>
                 </div>
             </footer>
