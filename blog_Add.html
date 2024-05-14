@@ -29,6 +29,10 @@
     <link href="assets/css/app-rtl.min.css" id="appCss" rel="stylesheet" />
     <!-- custom Css-->
     <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- quill css -->
+    <link href="assets/libs/quill/quill.core.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/quill/quill.bubble.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/quill/quill.snow.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -487,63 +491,32 @@
                         <div class="page-title-right d-flex align-items-center gap-3 flex-wrap">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="index.html"> لوحة التحكم </a></li>
-                                <li class="breadcrumb-item active"> من نحن </li>
+                                <li class="breadcrumb-item"><a href="blogs.html"> الاخبار </a></li>
+                                <li class="breadcrumb-item active"> اضافة خبر </li>
                             </ol>
-                            <a href="aboutUs_Add.html" class="btn btn-success">
-                                <i class="ri-add-circle-line align-middle me-1"></i> اضافة من نحن
-                            </a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <table class="table table-bordered dt-responsive nowrap table-striped align-middle w-100">
-                                <thead>
-                                    <tr>
-                                        <th> عربي </th>
-                                        <th>English </th>
-                                        <th> الاقسام الرئيسية </th>
-                                        <th>الإجراءات</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>معلومات بالعربي</td>
-                                        <td>Information in English</td>
-                                        <td>
-                                            <a href="aboutUs_categories.html" class="btn btn-primary"> عرض الاقسام
-                                                الرئيسية
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button>
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>معلومات بالعربي</td>
-                                        <td>Information in English</td>
-                                        <td>
-                                            <a href="aboutUs_categories.html" class="btn btn-primary"> عرض الاقسام
-                                                الرئيسية
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button>
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-
-                                    <!-- Add more rows with real data as needed -->
-                                </tbody>
-                            </table>
+                            <form action="" class="h-100 m-0 row">
+                                <div class="col-lg-6 col-md-6 p-2">
+                                    <label for="policyArabic" class="form-label">
+                                        بيانات الخبر عربي
+                                    </label>
+                                    <div class="snow-editor" style="height: 300px;"> </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 p-2">
+                                    <label for="policyArabic" class="form-label">
+                                        بيانات الخبر English
+                                    </label>
+                                    <div class="snow-editor" style="height: 300px;"> </div>
+                                </div>
+                                <div class="col-12 p-2 d-flex justify-content-end mt-auto">
+                                    <button class="btn btn-success fs-7 fw-medium" type="submit">
+                                        حفظ
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -556,7 +529,6 @@
                             <script>document.write(new Date().getFullYear())</script> © <a href="#!" target="_blank">
                                 ينجز </a>
                         </div>
-                        
                     </div>
                 </div>
             </footer>
@@ -609,6 +581,36 @@
     <script src="assets/js/pages/apexcharts-costom.js"></script>
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+    <!-- quill js -->
+    <script src="assets/libs/quill/quill.min.js"></script>
+    <script>
+        var snowEditor = document.querySelectorAll(".snow-editor");
+        snowEditor &&
+            Array.from(snowEditor).forEach(function (e) {
+                var o = {};
+                1 == e.classList.contains("snow-editor") &&
+                    ((o.theme = "snow"),
+                        (o.modules = {
+                            toolbar: [
+                                [{ font: [] }, { size: [] }],
+                                ["bold", "italic", "underline", "strike"],
+                                [{ color: [] }, { background: [] }],
+                                [{ script: "super" }, { script: "sub" }],
+                                [{ header: [!1, 1, 2, 3, 4, 5, 6] }, "blockquote", "code-block"],
+                                [
+                                    { list: "ordered" },
+                                    { list: "bullet" },
+                                    { indent: "-1" },
+                                    { indent: "+1" },
+                                ],
+                                ["direction", { align: [] }],
+                                ["link", "image", "video"],
+                                ["clean"],
+                            ],
+                        })),
+                    new Quill(e, o);
+            });
+    </script>
 </body>
 
 </html>

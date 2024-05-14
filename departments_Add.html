@@ -27,6 +27,8 @@
     <link href="assets/css/fancybox.css" id="appCss" rel="stylesheet" />
     <!-- App Css-->
     <link href="assets/css/app-rtl.min.css" id="appCss" rel="stylesheet" />
+    <!-- filepond Css-->
+    <link rel="stylesheet" href="assets/css/filepond.min.css">
     <!-- custom Css-->
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
@@ -483,67 +485,51 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0"> من نحن </h4>
+                        <h4 class="mb-sm-0">اضافة قسم </h4>
                         <div class="page-title-right d-flex align-items-center gap-3 flex-wrap">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="index.html"> لوحة التحكم </a></li>
-                                <li class="breadcrumb-item active"> من نحن </li>
+                                <li class="breadcrumb-item"><a href="departments.html"> الاقسام </a></li>
+                                <li class="breadcrumb-item active">اضافة قسم </li>
                             </ol>
-                            <a href="aboutUs_Add.html" class="btn btn-success">
-                                <i class="ri-add-circle-line align-middle me-1"></i> اضافة من نحن
-                            </a>
+
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <table class="table table-bordered dt-responsive nowrap table-striped align-middle w-100">
-                                <thead>
-                                    <tr>
-                                        <th> عربي </th>
-                                        <th>English </th>
-                                        <th> الاقسام الرئيسية </th>
-                                        <th>الإجراءات</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>معلومات بالعربي</td>
-                                        <td>Information in English</td>
-                                        <td>
-                                            <a href="aboutUs_categories.html" class="btn btn-primary"> عرض الاقسام
-                                                الرئيسية
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button>
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>معلومات بالعربي</td>
-                                        <td>Information in English</td>
-                                        <td>
-                                            <a href="aboutUs_categories.html" class="btn btn-primary"> عرض الاقسام
-                                                الرئيسية
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <button class="btnn bttn-dark">
-                                                <i class="ri-pencil-fill fs-16"></i>
-                                            </button>
-                                            <button class="btnn bttn-danger">
-                                                <i class="ri-delete-bin-fill fs-16"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
 
-                                    <!-- Add more rows with real data as needed -->
-                                </tbody>
-                            </table>
+
+                            <form action="" class="h-100 m-0 row">
+                                <div class=" col-12 p-2">
+                                    <div>
+                                        <label class="form-label"> الصورة </label>
+                                        <input type="file" name="" id="" class="filepond-multiple ">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 p-2">
+                                    <div>
+                                        <label for="arabic" class="form-label"> الاسم بالعربية </label>
+                                        <input type="text" class="form-control" id="arabic" placeholder="arabic">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 p-2">
+                                    <div>
+                                        <label for="English" class="form-label"> الاسم بالإنجليزية </label>
+                                        <input type="text" class="form-control" id="English" placeholder="English">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 p-2 d-flex justify-content-end mt-auto">
+                                    <button class="btn btn-success fs-7 fw-medium" type="submit">
+                                        حفظ
+                                    </button>
+                                </div>
+                            </form>
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -556,7 +542,6 @@
                             <script>document.write(new Date().getFullYear())</script> © <a href="#!" target="_blank">
                                 ينجز </a>
                         </div>
-                        
                     </div>
                 </div>
             </footer>
@@ -609,6 +594,12 @@
     <script src="assets/js/pages/apexcharts-costom.js"></script>
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+
+    <!-- file pond -->
+    <script src="assets/js/filepond.min.js"></script>
+    <script>
+        $(".filepond-multiple").filepond();
+    </script>
 </body>
 
 </html>

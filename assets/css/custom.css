@@ -465,4 +465,9 @@
 .fancybox__content,
 .carousel__track {
   direction: ltr !important;
+}
+
+.ql-toolbar {
+  direction: ltr;
+  text-align: left;
 }/*# sourceMappingURL=custom.css.map */

@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en" data-appColor="default" data-layout="vertical" data-topbar="light" data-sidebar="dark"
     data-sidebar-size="lg" data-sidebar-image="none" data-preloader="enable" dir="ltr">
-
-
 <head>
     <meta charset="utf-8" />
     <title></title>
@@ -30,9 +28,7 @@
     <link href="assets/css/app-rtl.min.css" id="appCss" rel="stylesheet" />
     <!-- custom Css-->
     <link rel="stylesheet" href="assets/css/custom.css">
-
 </head>
-
 <body>
     <!-- Begin page -->
     <div id="layout-wrapper">
@@ -363,7 +359,7 @@
                     <i class="ri-record-circle-line"></i>
                 </button>
             </div>
-             <div id="scrollbar">
+            <div id="scrollbar">
                 <div class="container-fluid">
                     <div id="two-column-menu">
                     </div>
@@ -491,12 +487,14 @@
                                 <li class="breadcrumb-item"><a href="index.html"> لوحة التحكم </a></li>
                                 <li class="breadcrumb-item active">الأقسام</li>
                             </ol>
+                            <a href="departments_Add.html" class="btn btn-success">
+                                <i class="ri-add-circle-line align-middle me-1"></i> اضافة قسم
+                            </a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <table 
-                                class="table table-bordered dt-responsive nowrap table-striped align-middle w-100">
+                            <table class="table table-bordered dt-responsive nowrap table-striped align-middle w-100">
                                 <thead>
                                     <tr>
                                         <th scope="col" style="width: 10px;">
@@ -508,7 +506,8 @@
                                         <th>الصورة</th>
                                         <th>الاسم بالعربية</th>
                                         <th>الاسم بالإنجليزية</th>
-                                        <th>الإجراءات</th> <!-- Added column for actions -->
+                                        <th> الاقسام الفرعية </th>
+                                        <th>الإجراءات</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -519,12 +518,27 @@
                                                     value="option1">
                                             </div>
                                         </td>
-                                        <td><img src="assets/images/sidebar/img-4.jpg" alt="صورة القسم 1"
-                                                style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                                        <td>
+                                            <a href="assets/images/profile-bg.jpg" data-fancybox>
+                                                <img src="assets/images/profile-bg.jpg"
+                                                    style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                                            </a>
                                         </td>
                                         <td>اسم القسم العربي 1</td>
                                         <td>English Name 1</td>
-                                        <td><a href="departments_sub.html" class="btn btn-link">عرض الأقسام الفرعية</a></td>
+                                        <td>
+                                            <a href="departments_sub.html" class="btn btn-primary"> عرض الاقسام
+                                                الفرعية
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="btnn bttn-dark">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </button>
+                                            <button class="btnn bttn-danger">
+                                                <i class="ri-delete-bin-fill fs-16"></i>
+                                            </button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -533,12 +547,27 @@
                                                     value="option2">
                                             </div>
                                         </td>
-                                        <td><img src="assets/images/sidebar/img-4.jpg" alt="صورة القسم 2"
-                                                style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                                        <td>
+                                            <a href="assets/images/profile-bg.jpg" data-fancybox>
+                                                <img src="assets/images/profile-bg.jpg"
+                                                    style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                                            </a>
                                         </td>
                                         <td>اسم القسم العربي 2</td>
                                         <td>English Name 2</td>
-                                        <td><a href="departments_sub.html" class="btn btn-link">عرض الأقسام الفرعية</a></td>
+                                        <td>
+                                            <a href="departments_sub.html" class="btn btn-primary"> عرض الاقسام
+                                                الفرعية
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="btnn bttn-dark">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </button>
+                                            <button class="btnn bttn-danger">
+                                                <i class="ri-delete-bin-fill fs-16"></i>
+                                            </button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -548,12 +577,26 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <img src="assets/images/sidebar/img-4.jpg" alt="صورة القسم 3"
-                                                style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                                            <a href="assets/images/profile-bg.jpg" data-fancybox>
+                                                <img src="assets/images/profile-bg.jpg"
+                                                    style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                                            </a>
                                         </td>
                                         <td>اسم القسم العربي 3</td>
                                         <td>English Name 3</td>
-                                        <td><a href="departments_sub.html" class="btn btn-link">عرض الأقسام الفرعية</a></td>
+                                        <td>
+                                            <a href="departments_sub.html" class="btn btn-primary"> عرض الاقسام
+                                                الفرعية
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="btnn bttn-dark">
+                                                <i class="ri-pencil-fill fs-16"></i>
+                                            </button>
+                                            <button class="btnn bttn-danger">
+                                                <i class="ri-delete-bin-fill fs-16"></i>
+                                            </button>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -562,7 +605,6 @@
                 </div>
             </div>
             <!-- End Page-content -->
-
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
@@ -574,7 +616,6 @@
                 </div>
             </footer>
         </div>
-
         <!-- end main content-->
     </div>
     <!--start back-to-top-->
@@ -623,10 +664,5 @@
     <script src="assets/js/pages/apexcharts-costom.js"></script>
     <!-- App js -->
     <script src="assets/js/app.js"></script>
-
-
-
-
 </body>
-
 </html>
