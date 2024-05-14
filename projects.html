@@ -483,11 +483,11 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0"> شركاؤونا </h4>
+                        <h4 class="mb-sm-0"> المشاريع </h4>
                         <div class="page-title-right d-flex align-items-center gap-3 flex-wrap">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="index.html"> لوحة التحكم </a></li>
-                                <li class="breadcrumb-item active"> شركاؤونا </li>
+                                <li class="breadcrumb-item active"> المشاريع </li>
                             </ol>
                             <a href="partners_Add.html" class="btn btn-success">
                                 <i class="ri-add-circle-line align-middle me-1"></i> اضافة شريك
@@ -496,13 +496,136 @@
                     </div>
                     <div class="card">
                         <div class="card-body">
+                            <table class="table table-bordered dt-responsive nowrap table-striped align-middle w-100">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" style="width: 10px;">
+                                            <div class="form-check">
+                                                <input class="form-check-input fs-15" type="checkbox" id="checkAll"
+                                                    value="option">
+                                            </div>
+                                        </th>
+                                        <th>الاسم</th>
+                                        <th>الوصف</th>
+                                        <th>السعر</th>
+                                        <th>المدة</th>
+                                        <th>الملفات المرفوعة</th>
+                                        <th>الطلبات المقدمة</th>
+                                        <th>حساب الشخص</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="form-check">
+                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll"
+                                                    value="option1">
+                                            </div>
+                                        </th>
+                                        <td>اسم الخدمة 1</td>
+                                        <td>وصف الخدمة 1</td>
+                                        <td>$100</td>
+                                        <td>30 يوم</td>
+                                        <td>
+                                            <button class="btn btn-outline-dark" data-bs-toggle="modal"
+                                                data-bs-target="#filesModal">عرض الملفات</button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-outline-dark" data-bs-toggle="modal"
+                                                data-bs-target="#requestsModal">عرض الطلبات</button>
+                                        </td>
+                                        <td>
+                                            <a href="#!">الانتقال إلى الحساب</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="form-check">
+                                                <input class="form-check-input fs-15" type="checkbox" name="checkAll"
+                                                    value="option1">
+                                            </div>
+                                        </th>
+                                        <td>اسم الخدمة 2</td>
+                                        <td>وصف الخدمة 2</td>
+                                        <td>$150</td>
+                                        <td>60 يوم</td>
+                                        <td>
+                                            <button class="btn btn-outline-dark" data-bs-toggle="modal"
+                                                data-bs-target="#filesModal">عرض الملفات</button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-outline-dark" data-bs-toggle="modal"
+                                                data-bs-target="#requestsModal">عرض الطلبات</button>
+                                        </td>
+                                        <td>
+                                            <a href="#!">الانتقال إلى الحساب</a>
+                                        </td>
+                                    </tr>
+                                    <!-- يمكنك إضافة صفوف إضافية هنا -->
+                                </tbody>
+                            </table>
+                            <!-- Files Modal -->
+                            <div class="modal fade costomModal" id="filesModal" tabindex="-1" role="dialog"
+                                aria-labelledby="filesModalLabel1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="filesModalLabel1">ملفات الخدمة 1</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="files">
+                                                <div class="fileView">
+                                                    <a href="assets/images/profile-bg.jpg" data-fancybox="fileUser1">
+                                                        <img src="assets/images/profile-bg.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="fileView">
+                                                    <a href="assets/images/profile-bg.jpg" data-fancybox="fileUser1">
+                                                        <img src="assets/images/profile-bg.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="fileView">
+                                                    <a href="assets/images/profile-bg.jpg" data-fancybox="fileUser1">
+                                                        <img src="assets/images/profile-bg.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="fileView">
+                                                    <a href="assets/images/profile-bg.jpg" data-fancybox="fileUser1">
+                                                        <img src="assets/images/profile-bg.jpg">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark"
+                                                data-bs-dismiss="modal">إغلاق</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Requests Modal -->
+                            <div class="modal fade costomModal" id="requestsModal" tabindex="-1" role="dialog"
+                                aria-labelledby="requestsModalLabel1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="requestsModalLabel1">طلبات الخدمة 1</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- إضافة قائمة الطلبات لهذه الخدمة -->
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark"
+                                                data-bs-dismiss="modal">إغلاق</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                           
-                            
-
-
-
-
-                            
                         </div>
                     </div>
                 </div>
@@ -515,7 +638,6 @@
                             <script>document.write(new Date().getFullYear())</script> © <a href="#!" target="_blank">
                                 ينجز </a>
                         </div>
-                        
                     </div>
                 </div>
             </footer>

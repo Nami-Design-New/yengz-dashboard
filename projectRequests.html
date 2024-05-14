@@ -483,26 +483,118 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0"> شركاؤونا </h4>
+                        <h4 class="mb-sm-0"> طلبات المشاريع </h4>
                         <div class="page-title-right d-flex align-items-center gap-3 flex-wrap">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="index.html"> لوحة التحكم </a></li>
-                                <li class="breadcrumb-item active"> شركاؤونا </li>
+                                <li class="breadcrumb-item active"> طلبات المشاريع </li>
                             </ol>
-                            <a href="partners_Add.html" class="btn btn-success">
-                                <i class="ri-add-circle-line align-middle me-1"></i> اضافة شريك
-                            </a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body">
-                          
-                            
-
-
-
-
-                            
+                            <table class="table table-bordered dt-responsive nowrap table-striped align-middle w-100">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">الاسم</th>
+                                        <th scope="col">الوصف</th>
+                                        <th scope="col">السعر</th>
+                                        <th scope="col">المدة</th>
+                                        <th scope="col">عرض الملفات</th>
+                                        <th scope="col">العرض المقدم</th>
+                                        <th scope="col">حالة الطلب</th>
+                                        <th scope="col">الشات</th>
+                                        <th scope="col">عرض حساب صاحب المشروع</th>
+                                        <th scope="col">عرض حساب العامل على المشروع</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>مشروع 1</td>
+                                        <td>وصف المشروع 1</td>
+                                        <td>$200</td>
+                                        <td>10 أيام</td>
+                                        <td>
+                                            <button class="btn btn-outline-dark" data-bs-toggle="modal"
+                                                data-bs-target="#filesModal">عرض الملفات</button>
+                                        </td>
+                                        <td>عرض العرض</td>
+                                        <td>قيد الانتظار</td>
+                                        <td>
+                                            <a href="chatRoom.html" class="btn btn-success"> عرض المحادثة </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-dark">صاحب المشروع</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-dark"> الفريلانسر </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>مشروع 2</td>
+                                        <td>وصف المشروع 2</td>
+                                        <td>$300</td>
+                                        <td>15 أيام</td>
+                                        <td>
+                                            <button class="btn btn-outline-dark" data-bs-toggle="modal"
+                                                data-bs-target="#filesModal">عرض الملفات</button>
+                                        </td>
+                                        <td>عرض العرض</td>
+                                        <td>مقبول</td>
+                                        <td>
+                                            <a href="chatRoom.html" class="btn btn-success"> عرض المحادثة </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-dark">صاحب المشروع</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-dark"> الفريلانسر </a>
+                                        </td>
+                                    </tr>
+                                    <!-- Add more project rows here -->
+                                </tbody>
+                            </table>
+                            <!-- Files Modal -->
+                            <div class="modal fade costomModal" id="filesModal" tabindex="-1" role="dialog"
+                                aria-labelledby="filesModalLabel1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="filesModalLabel1">ملفات الخدمة 1</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="files">
+                                                <div class="fileView">
+                                                    <a href="assets/images/profile-bg.jpg" data-fancybox="fileUser1">
+                                                        <img src="assets/images/profile-bg.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="fileView">
+                                                    <a href="assets/images/profile-bg.jpg" data-fancybox="fileUser1">
+                                                        <img src="assets/images/profile-bg.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="fileView">
+                                                    <a href="assets/images/profile-bg.jpg" data-fancybox="fileUser1">
+                                                        <img src="assets/images/profile-bg.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="fileView">
+                                                    <a href="assets/images/profile-bg.jpg" data-fancybox="fileUser1">
+                                                        <img src="assets/images/profile-bg.jpg">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark"
+                                                data-bs-dismiss="modal">إغلاق</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -515,7 +607,6 @@
                             <script>document.write(new Date().getFullYear())</script> © <a href="#!" target="_blank">
                                 ينجز </a>
                         </div>
-                        
                     </div>
                 </div>
             </footer>
