@@ -483,26 +483,213 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0"> شركاؤونا </h4>
+                        <h4 class="mb-sm-0"> الخدمات </h4>
                         <div class="page-title-right d-flex align-items-center gap-3 flex-wrap">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="index.html"> لوحة التحكم </a></li>
-                                <li class="breadcrumb-item active"> شركاؤونا </li>
+                                <li class="breadcrumb-item active"> الخدمات </li>
                             </ol>
-                            <a href="partners_Add.html" class="btn btn-success">
-                                <i class="ri-add-circle-line align-middle me-1"></i> اضافة شريك
-                            </a>
+
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body">
-                          
-                            
-
-
-
-
-                            
+                            <table class="table table-bordered dt-responsive nowrap table-striped align-middle w-100">
+                                <thead>
+                                    <tr>
+                                        <th>الصورة</th>
+                                        <th>الاسم</th>
+                                        <th>الوصف</th>
+                                        <th>السعر</th>
+                                        <th>المدة</th>
+                                        <th>تعليمات المشتري</th>
+                                        <th>عرض التطويرات</th>
+                                        <th>عرض التقييمات</th>
+                                        <th>عرض التعليقات</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="assets/images/profile-bg.jpg" data-fancybox>
+                                                <img src="assets/images/profile-bg.jpg"
+                                                    style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                                            </a>
+                                        </td>
+                                        <td>خدمة 1</td>
+                                        <td>وصف خدمة 1</td>
+                                        <td>$50</td>
+                                        <td>5 أيام</td>
+                                        <td>تعليمات المشتري</td>
+                                        <td>
+                                            <button class="btn btn-outline-dark" data-bs-toggle="modal"
+                                                data-bs-target="#developmentModal">عرض التطويرات</button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-outline-dark" data-bs-toggle="modal"
+                                                data-bs-target="#ratingModal">عرض التقييمات</button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-outline-dark" data-bs-toggle="modal"
+                                                data-bs-target="#commentModal">عرض التعليقات</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="assets/images/profile-bg.jpg" data-fancybox>
+                                                <img src="assets/images/profile-bg.jpg"
+                                                    style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+                                            </a>
+                                        </td>
+                                        <td>خدمة 2</td>
+                                        <td>وصف خدمة 2</td>
+                                        <td>$80</td>
+                                        <td>7 أيام</td>
+                                        <td>تعليمات المشتري</td>
+                                        <td>
+                                            <button class="btn btn-outline-dark" data-bs-toggle="modal"
+                                                data-bs-target="#developmentModal">عرض التطويرات</button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-outline-dark" data-bs-toggle="modal"
+                                                data-bs-target="#ratingModal">عرض التقييمات</button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-outline-dark" data-bs-toggle="modal"
+                                                data-bs-target="#commentModal">عرض التعليقات</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- developmentModal -->
+                            <div class="modal fade costomModal" id="developmentModal" tabindex="-1" role="dialog"
+                                aria-labelledby="developmentModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="developmentModalLabel">ملفات المستخدم</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table
+                                                class="table table-bordered dt-responsive nowrap table-striped align-middle w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th>الاسم</th>
+                                                        <th>السعر</th>
+                                                        <th>المدة</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>اسم التطوير 1</td>
+                                                        <td>سعر التطوير 1</td>
+                                                        <td>مدة التطوير 1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>اسم التطوير 2</td>
+                                                        <td>سعر التطوير 2</td>
+                                                        <td>مدة التطوير 2</td>
+                                                    </tr>
+                                                    <!-- يمكنك اضافة صفوف اضافية هنا -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark"
+                                                data-bs-dismiss="modal">إغلاق</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ratingModal -->
+                            <div class="modal fade costomModal" id="ratingModal" tabindex="-1" role="dialog"
+                                aria-labelledby="ratingModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="ratingModalLabel">ملفات المستخدم</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table
+                                                class="table table-bordered dt-responsive nowrap table-striped align-middle w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th>اسم اليوزر</th>
+                                                        <th>ID</th>
+                                                        <th>التقييم</th>
+                                                        <th>رسالة التقييم</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>اسم المستخدم 1</td>
+                                                        <td> ID 1</td>
+                                                        <td> 4.5 </td>
+                                                        <td>رسالة التقييم 1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>اسم المستخدم 2</td>
+                                                        <td> ID 2</td>
+                                                        <td> 4.5 </td>
+                                                        <td>رسالة التقييم 2</td>
+                                                    </tr>
+                                                    <!-- يمكنك اضافة صفوف اضافية هنا -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark"
+                                                data-bs-dismiss="modal">إغلاق</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- commentModal -->
+                            <div class="modal fade costomModal" id="commentModal" tabindex="-1" role="dialog"
+                                aria-labelledby="commentModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="commentModalLabel">ملفات المستخدم</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table
+                                                class="table table-bordered dt-responsive nowrap table-striped align-middle w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th>اسم اليوزر</th>
+                                                        <th>ID</th>
+                                                        <th>التعليق</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>اسم المستخدم 1</td>
+                                                        <td> ID 1</td>
+                                                        <td>التعليق 1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>اسم المستخدم 2</td>
+                                                        <td> ID 2</td>
+                                                        <td>التعليق 2</td>
+                                                    </tr>
+                                                    <!-- يمكنك اضافة صفوف اضافية هنا -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark"
+                                                data-bs-dismiss="modal">إغلاق</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -515,7 +702,6 @@
                             <script>document.write(new Date().getFullYear())</script> © <a href="#!" target="_blank">
                                 ينجز </a>
                         </div>
-                        
                     </div>
                 </div>
             </footer>
